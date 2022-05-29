@@ -20,103 +20,43 @@
           Want more details?
         </a>
       </header>
-      
+
       <article class="todo-app">
-        
+
         <div class="todo-app__add-item">
-          
-          <label class="todo-app__section-header" 
+
+          <label class="todo-app__section-header"
                  for="todo-app__add-item-input">
             Add Item
           </label>
 
           <div class="todo-app__add-item-input-wrapper">
-            
-            <input id="todo-app__add-item-input" 
-                   class="todo-app__add-item-input" 
+
+            <input id="todo-app__add-item-input"
+                   class="todo-app__add-item-input"
                    type="text">
-            
+
             <button class="todo-app__add-item-button">
               Add
             </button>
 
           </div>
         </div>
-        
+
         <h3 class="todo-app__section-header">Todo</h3>
-        
-        <ul class="todo-app__list 
-                   todo-app__list_type_incomplete-tasks"> 
-          
+
+        <ul class="todo-app__list
+                   todo-app__list_type_incomplete-tasks">
+
           <li class="todo-app__list-item">
-            <input type="checkbox" 
+            <input type="checkbox"
                    class="todo-app__list-item-checkbox">
 
             <label class="todo-app__task-item">
               Pay Bills
             </label>
 
-            <input type="text" 
-                   class="todo-app__list-item-input">
-
-            <button class="todo-app__edit-button 
-                           todo-app__edit-button_state_edit">
-              Edit
-            </button>
-            
-            <button class="todo-app__delete-button">
-              <img class="todo-app__delete-button-icon" 
-                   src="./remove.svg" 
-                   alt="Delete button icon">
-            </button>
-
-          </li>
-          
-          <li class="todo-app__list-item
-                     todo-app__list-item_mode_edit">
-
-            <input type="checkbox" 
-                   class="todo-app__list-item-checkbox">
-
-            <label class="todo-app__task-item">
-              Go Shopping
-            </label>
-
-            <input type="text" 
-                   value="Go Shopping" 
-                   class="todo-app__list-item-input">
-
-            <button class="todo-app__edit-button
-                           todo-app__edit-button_state_save">
-              Save
-            </button>
-
-            <button class="todo-app__delete-button">
-              <img class="todo-app__delete-button-icon" 
-                   src="./remove.svg" 
-                   alt="Delete button icon">
-            </button>
-
-          </li>
-        </ul>
-
-        <h3 class="todo-app__section-header">Completed</h3>
-        
-        <ul class="todo-app__list 
-                   todo-app__list_type_completed-tasks">
-
-          <li class="todo-app__list-item 
-                     todo-app__list-item_state_completed">
-
-            <input type="checkbox" 
-                   checked  
-                   class="todo-app__list-item-checkbox">
-
-            <label class="todo-app__task-item">
-              See the Doctor
-            </label>
-
-            <input type="text" 
+            <input type="text"
                    class="todo-app__list-item-input">
 
             <button class="todo-app__edit-button
@@ -126,7 +66,67 @@
 
             <button class="todo-app__delete-button">
               <img class="todo-app__delete-button-icon"
-                   src="./remove.svg" 
+                   src="./remove.svg"
+                   alt="Delete button icon">
+            </button>
+
+          </li>
+
+          <li class="todo-app__list-item
+                     todo-app__list-item_mode_edit">
+
+            <input type="checkbox"
+                   class="todo-app__list-item-checkbox">
+
+            <label class="todo-app__task-item">
+              Go Shopping
+            </label>
+
+            <input type="text"
+                   value="Go Shopping"
+                   class="todo-app__list-item-input">
+
+            <button class="todo-app__edit-button
+                           todo-app__edit-button_state_save">
+              Save
+            </button>
+
+            <button class="todo-app__delete-button">
+              <img class="todo-app__delete-button-icon"
+                   src="./remove.svg"
+                   alt="Delete button icon">
+            </button>
+
+          </li>
+        </ul>
+
+        <h3 class="todo-app__section-header">Completed</h3>
+
+        <ul class="todo-app__list
+                   todo-app__list_type_completed-tasks">
+
+          <li class="todo-app__list-item
+                     todo-app__list-item_state_completed">
+
+            <input type="checkbox"
+                   checked
+                   class="todo-app__list-item-checkbox">
+
+            <label class="todo-app__task-item">
+              See the Doctor
+            </label>
+
+            <input type="text"
+                   class="todo-app__list-item-input">
+
+            <button class="todo-app__edit-button
+                           todo-app__edit-button_state_edit">
+              Edit
+            </button>
+
+            <button class="todo-app__delete-button">
+              <img class="todo-app__delete-button-icon"
+                   src="./remove.svg"
                    alt="Delete button icon">
             </button>
 

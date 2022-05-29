@@ -22,7 +22,7 @@
 }
 
 @media (max-width:768px) {
-  .header { 
+  .header {
     text-align: center;
   }
 }
@@ -51,7 +51,7 @@
   padding: 0px;
 }
 
-.todo-app__list-item, 
+.todo-app__list-item,
 .todo-app__section-header {
   list-style: none;
 }
@@ -92,7 +92,7 @@
   margin: 0;
   text-transform: uppercase;
 }
-.todo-app__add-item 
+.todo-app__add-item
 .todo-app__section-header {
   display: block;
   margin: 0 0 20px;
@@ -163,7 +163,7 @@
 }
 
 /* Completed */
-.todo-app__list_type_completed-tasks 
+.todo-app__list_type_completed-tasks
 .todo-app__task-item
  {
   text-decoration: line-through;
@@ -175,7 +175,7 @@
   display: none;
 }
 
-.todo-app__list-item_mode_edit 
+.todo-app__list-item_mode_edit
 .todo-app__list-item-input
  {
   display: inline-block;

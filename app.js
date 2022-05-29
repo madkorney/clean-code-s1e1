@@ -7,8 +7,8 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput = document.querySelector(".todo-app__add-item-input"); 
-var addButton = document.querySelector(".todo-app__add-item-button"); 
+var taskInput = document.querySelector(".todo-app__add-item-input");
+var addButton = document.querySelector(".todo-app__add-item-button");
 var incompleteTaskHolder = document.querySelector(".todo-app__list_type_incomplete-tasks");
 var completedTasksHolder = document.querySelector(".todo-app__list_type_completed-tasks");
 
@@ -26,11 +26,11 @@ var createNewTaskElement=function(taskString){
     // label
     const label = document.createElement('label');
     label.innerText = taskString;
-    label.className = 'todo-app__task-item'; 
+    label.className = 'todo-app__task-item';
     // input (text)
     const editInput = document.createElement('input');
     editInput.type = 'text';
-    editInput.className = 'todo-app__list-item-input'; 
+    editInput.className = 'todo-app__list-item-input';
     // button.edit
     const editButton = document.createElement("button");
     editButton.innerText = 'Edit';  // innerText encodes special characters, HTML does not.
@@ -39,8 +39,8 @@ var createNewTaskElement=function(taskString){
     //button.delete
     const deleteButton = document.createElement('button'); // delete button
     const deleteButtonImg = document.createElement('img'); // delete button image
-    deleteButton.className = 'todo-app__delete-button';  
-    deleteButtonImg.className = 'todo-app__delete-button-icon';  
+    deleteButton.className = 'todo-app__delete-button';
+    deleteButtonImg.className = 'todo-app__delete-button-icon';
     deleteButtonImg.src = './remove.svg';
     deleteButtonImg.alt = 'Delete button icon';
     deleteButton.appendChild(deleteButtonImg); // append img into delete-buton
@@ -51,7 +51,7 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(editInput);
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
-    
+
     return listItem;
 }
 
@@ -96,7 +96,7 @@ var editTask = function() {
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle('todo-app__list-item_mode_edit'); 
+    listItem.classList.toggle('todo-app__list-item_mode_edit');
 };
 
 // Delete task.
@@ -148,7 +148,7 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
     var editButton = taskListItem.querySelector('.todo-app__edit-button');
     var deleteButton = taskListItem.querySelector('.todo-app__delete-button');
 
-    // Bind editTask to edit button.   
+    // Bind editTask to edit button.
     editButton.onclick = editTask;
     // Bind deleteTask to delete button.
     deleteButton.onclick = deleteTask;
@@ -169,5 +169,5 @@ for (let i = 0; i < completedTasksHolder.children.length; i += 1){
 
 // Issues with usability don't get seen until they are in front of a human tester.
 
-// prevent creation of empty tasks. 
+// prevent creation of empty tasks.
 // Change edit to save when you are in edit mode.
